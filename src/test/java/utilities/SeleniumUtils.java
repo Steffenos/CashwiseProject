@@ -1,6 +1,7 @@
 package utilities;
 
-import org.junit.jupiter.api.Assertions;
+
+import junit.framework.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,9 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Assertions;
 
-public class SeleniumUtils {
+
+public class  SeleniumUtils {
 
     /**
      * This method clicks on the given element, switches to the newly opened tab
@@ -153,7 +154,7 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(numOfSec));
         wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
 
-        Assertions.assertEquals(expectedText, element.getText());
+        Assert.assertEquals(expectedText, element.getText());
     }
 
 
