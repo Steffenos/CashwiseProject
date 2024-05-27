@@ -33,9 +33,5 @@ public class LoginSteps {
         cashwiseLoginPage.signInButton.click();
     }
 
-    @Then("verify user redirected to the home page")
-    public void verify_user_redirected_to_the_home_page() {
-
-    }
-
 }
+
